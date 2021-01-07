@@ -5,5 +5,8 @@
 {% block content %}
 <h2 class="mt-3">{{survey.title}}</h2>
 <p>{{survey.instructions}}</p>
-<a href="/question/0" class="btn btn-primary">Start Survey</a>
+<form action='/begin/{{name}}' method="POST">
+    <button class="btn btn-primary">Start Survey</button>
+</form>
+
 {% endblock %}
