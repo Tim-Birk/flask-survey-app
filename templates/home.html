@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block title %}Survey App{% endblock %} {% block
+content %}
+
+<h1 class="text-center my-4">Select a Survey</h1>
+<div class="row text-center justify-content-center">
+  <div class="col-12 col-sm-6 col-md-4 mb-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Survey 1</h5>
+        <p class="card-text">Customer Satisfaction Survey</p>
+        <a href="/surveys/satisfaction" class="btn btn-primary">Go to survey</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 mb-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Survey 2</h5>
+        <p class="card-text">Rithm Personality Test</p>
+        <a href="/surveys/personality" class="btn btn-primary">Go to survey</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

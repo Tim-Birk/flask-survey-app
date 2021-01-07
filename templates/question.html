@@ -16,8 +16,17 @@ block content %}
     />
     <label class="form-check-label" for="answer">{{choice}}</label>
   </div>
-
-  {% endfor %}
+  {% endfor %} {% if question.allow_text %}
+  <div class="form-group mt-3">
+    <label for="specify">Specify:</label>
+    <textarea
+      class="form-control"
+      id="specify"
+      name="specify"
+      rows="3"
+    ></textarea>
+  </div>
+  {% endif %}
   <button class="btn btn-primary mt-3">Next</button>
 </form>
 
